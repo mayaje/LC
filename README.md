@@ -30,7 +30,9 @@ We can translate the above to code (with comments) in Python:
 ```
 ### Complexity Analysis
 
-#### Space: The space complexity for BFS on a binary tree is O(n), and the same is the case here. We maintain a queue that keeps track of the nodes in our tree, and it’s possible that we may need to hold all the nodes of the tree in the queue at a point in time.
+#### Space: 
+The space complexity for BFS on a binary tree is O(n), and the same is the case here. We maintain a queue that keeps track of the nodes in our tree, and it’s possible that we may need to hold all the nodes of the tree in the queue at a point in time.
 
-#### Time: The time complexity for BFS on a binary tree is O(n), and the same is the case for this problem. When searching for the left-most node, it’s possible that we may have to travel through every single node in the tree (consider, for example, a tree whose nodes only have left children). 
+#### Time: 
+The time complexity for BFS on a binary tree is O(n), and the same is the case for this problem. When searching for the left-most node, it’s possible that we may have to travel through every single node in the tree (consider, for example, a tree whose nodes only have left children). 
 
