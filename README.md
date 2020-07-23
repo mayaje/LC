@@ -22,9 +22,10 @@ We can translate the above to code (with comments) in Python:
         # initialize the value of the current left-most node
         currLeft = 0
         while currQueue:
-            # update the value of currLeft for ecah row
+            # update the value of currLeft for current row
             currLeft = currQueue[0].val
             # add children (if they exist) to the queue from L to R
+            # this is how we move to the next row -- by adding the immediate children of nodes in the current row
             currQueue = [child for parent in currQueue for child in (parent.left, parent.right) if child]
         return currLeft
 ```
